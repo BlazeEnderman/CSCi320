@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>About PUBG</title>
+    <title>FAQ</title>
   </head>
   <body>
     <main>
@@ -16,14 +16,13 @@
           <li> <a href="#">FAQ</a></li>
         </ul> </p>
       </header>
-
       <section>
-        <p>
-          THIS IS WHERE WE WIL HAVE CONTENT LIKE SPEC AND ONLINE players and stuff like that.
-         We can have some flashy images and stuff just make it look gamery
-        </p>
+        <h2>We will put the questions</h2>
+        <p>in this format. We will also have comments like this. we can generate this using a sql query, and build them using a php funciton. </p>
+
       </section>
 
     </main>
+
   </body>
 </html>
