@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>About PUBG</title>
+    <link rel="stylesheet" href="finalProject/stylez.css" />
   </head>
   <body>
     <main>
@@ -13,7 +14,7 @@
           <li> <a href="finalProject\finalDesign.php">Home</a> </li>
           <li> <a href="contact.php">Contact</a> </li>
           <li> <a href="about.php">About Us</a> </li>
-          <li> <a href="#">FAQ</a></li>
+          <li> <a href="faq.php">FAQ</a></li>
         </ul> </p>
       </header>
 

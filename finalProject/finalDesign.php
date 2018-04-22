@@ -16,7 +16,7 @@
   <li><a href="finalDesign.php">Home</a></li>
   <li><a href="../contact.php">Contact</a></li>
   <li><a href="../about.php">About</a></li>
-  <li><a href="#">FAQ</a></li>
+  <li><a href="../faq.php">FAQ</a></li>
   </ul>
 </div>
 <div class="video">

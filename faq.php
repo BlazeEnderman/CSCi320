@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>FAQ</title>
+    <link rel="stylesheet" href="finalProject/stylez.css" />
   </head>
   <body>
     <main>
@@ -10,10 +11,10 @@
         <img src="PUBG_Header.png" alt="HeaderIMG">
 
         <p> <ul>
-          <li> <a href="#">Home</a> </li>
-          <li> <a href="#">Contact</a> </li>
-          <li> <a href="#">About Us</a> </li>
-          <li> <a href="#">FAQ</a></li>
+          <li> <a href="finalProject\finalDesign.php">Home</a> </li>
+          <li> <a href="contact.php">Contact</a> </li>
+          <li> <a href="about.php">About Us</a> </li>
+          <li> <a href="faq.php">FAQ</a></li>
         </ul> </p>
       </header>
       <section>
