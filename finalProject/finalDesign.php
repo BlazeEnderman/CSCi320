@@ -9,7 +9,7 @@
 <header>
   <img src="../PUBG_Header.png" alt="HeaderIMG" class = "headPic">
 </header>
-<body>
+<body background="background.jpg" height: 100%; Width: 100%; >
 <a href="#">Login/Create Account</a>
 <div id= "navBar">
   <ul>
