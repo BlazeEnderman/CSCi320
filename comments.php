@@ -9,11 +9,8 @@ function outputComments()
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       $sql = "SELECT * FROM comments";
       $result = $pdo->query($sql);
-<<<<<<< HEAD
-      while ($row = $result-fetch()) {
-=======
+
       while ($row = $result->fetch()) {
->>>>>>> ff937c730fe65209a1af4b11175c1c71854b7f27
         outputSingleComment($row);
       }
       $pdo=null;
@@ -36,12 +33,11 @@ function outputSingleComment($row)
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
+
     <title></title>
-=======
     <link rel="stylesheet" href="finalProject/stylez.css" />
     <title>Comments</title>
->>>>>>> ff937c730fe65209a1af4b11175c1c71854b7f27
+
   </head>
   <body>
     <main>
@@ -52,10 +48,8 @@ function outputSingleComment($row)
           <li> <a href="contact.php">Contact</a> </li>
           <li> <a href="about.php">About Us</a> </li>
           <li> <a href="faq.php">FAQ</a></li>
-<<<<<<< HEAD
-=======
           <li> <a href="comments.php">Comments</a> </li>
->>>>>>> ff937c730fe65209a1af4b11175c1c71854b7f27
+
         </ul> </p>
       </header>
       <section>
