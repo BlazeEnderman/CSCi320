@@ -9,7 +9,7 @@
 <header>
   <img src="../PUBG_Header.png" alt="HeaderIMG" class = "headPic">
 </header>
-<body>
+<body  background="background.jpg">
 <a href="#">Login/Create Account</a>
 <div id= "navBar" >
   <ul>
@@ -20,7 +20,7 @@
   <li> <a href="../comments.php">Comments</a> </li>
   </ul>
 </div>
-<div class="video"  background="background.jpg" >
+<div class="video" >
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qJfNdN2_rGg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
