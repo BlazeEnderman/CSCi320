@@ -25,8 +25,8 @@
 </div>
 
 <section class="generalInfo">
-  <h1>The Meat</h1>
-  <p>
+  <h1 id="meat">The Meat</h1>
+  <p id="meat">
   </p>
 
 </body>
