@@ -7,7 +7,7 @@ function outputComments()
   try {
       $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $sql = "SELECT * FROM comments";
+      $sql = "SELECT * FROM comments WHERE approved=1";
       $result = $pdo->query($sql);
 
       while ($row = $result->fetch()) {
