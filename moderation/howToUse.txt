@@ -1,0 +1,2 @@
+To use this backend app, put this directory in a different dirrectory than the rest
+of the webpage. Then simply navagate to moderator_page_login.php to use it

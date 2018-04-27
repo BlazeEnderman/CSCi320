@@ -1,0 +1,12 @@
+body{
+  background-color: darkgrey;
+}
+
+#header {
+  text-align: center;
+  background-color: lightgrey;
+}
+
+.mainStuff{
+  background-color: lightgrey;
+}
