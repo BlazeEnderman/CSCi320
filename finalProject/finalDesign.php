@@ -27,6 +27,12 @@
 <section class="generalInfo">
   <h1 id="meat">The Meat</h1>
   <p id="meat">
+    Playerunknown's Battlegrounds is a battle royale, where players try to claim
+    victory by killing each other with things like guns and grenades and stuff.
+    there is also a legend of a weapon so powerful it made players that wielded
+    the mighty weapon almost invincible. This weapon is the frying pan. How cool
+    would it be to have a weapon like that? Join the PUBG community now and experience
+    all of these awesome features.
   </p>
 
 </body>

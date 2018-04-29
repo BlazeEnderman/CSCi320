@@ -41,6 +41,7 @@ function outputSingleComment($row)
   </head>
   <body>
     <main>
+      <div id="navBars">
       <header>
         <img src="PUBG_Header.png" alt="HeaderIMG" class = "headPic">
         <p> <ul>
@@ -49,9 +50,9 @@ function outputSingleComment($row)
           <li> <a href="about.php">About Us</a> </li>
           <li> <a href="faq.php">FAQ</a></li>
           <li> <a href="comments.php">Comments</a> </li>
-
         </ul> </p>
       </header>
+    </div>
       <section>
         <h1>What people are saying about PUBG</h1>
         <br>

@@ -1,4 +1,13 @@
-ul {
+#navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+#navBars ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -11,7 +20,7 @@ li {
     float: left;
 }
 
-li a {
+#navBar li a {
     display: block;
     color: white;
     text-align: center;
@@ -20,7 +29,20 @@ li a {
     width: 118px;
 }
 
-li a:hover:not(.active) {
+#navBars li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 118px;
+}
+
+#navBar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#navBars li a:hover:not(.active) {
     background-color: #111;
 }
 
@@ -60,7 +82,11 @@ body {
   background-color: lightgrey;
 }
 
-header {
+#navBar header {
+  background-color: #333;
+}
+
+#navBars header {
   background-color: #333;
 }
 
