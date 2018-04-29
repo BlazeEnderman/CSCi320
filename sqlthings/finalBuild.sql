@@ -3,4 +3,10 @@ CREATE TABLE comments;
 ALTER TABLE comments
     ADD firstName VARCHAR(50),
     ADD lastName VARCHAR(50),
-    ADD userComment LONGTEXT;
+    ADD userComment LONGTEXT,
+    ADD approved TINYINT,
+    ADD checked TINYINT;
+CREATE TABLE users;
+ALTER TABLE users
+    ADD password VARCHAR(50),
+    ADD userName VARCHAR(50);
