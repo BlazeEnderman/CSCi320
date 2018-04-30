@@ -1,5 +1,7 @@
 <?php
-$funct = $_GET['function'];
+require 'mod_config.php';
+
+$funct = $_REQUEST['function'];
 
 if ($funct == 1) {
  try{
@@ -8,7 +10,7 @@ if ($funct == 1) {
   $sql = "SELECT * FROM comments WHERE approved=0 AND checked=0 LIMIT 1";
   $result = $pdo->query($sql);
   if ($row = $result->fetch()) {
-    echo "[" . $row['firstName'] . "," . $row['lastName'] . "," . $row['userComment'] . "," . $row['ID'] . "]";
+    echo  $row['firstName'] . "|" . $row['lastName'] . "|" . $row['userComment'] . "|" . $row['id'];
   }
 
   $pdo = null;
@@ -17,14 +19,11 @@ if ($funct == 1) {
  }
 
 } else if ($funct == 2) {
-  if ($_GET["state"] != 1 || $_GET["state" != 0]) {
-      die("BAD THIGNS HAPPENED");
-  }
-  $approved = $_GET['state'];
-  $id = $_GET['id'];
+  $approved = $_REQUEST['state'];
+  $id = $_REQUEST['id'];
   if ($approved == true) {
     try {
-      $pdo = new PDO(BDCONNSTRING. DBUSER, DBPASS);
+      $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       $sql = "UPDATE comments SET approved=1, checked=1 WHERE id=:id";
       $statement = $pdo->prepare($sql);
@@ -35,9 +34,9 @@ if ($funct == 1) {
     }
   } elseif ($approved == false) {
     try {
-      $pdo = new PDO(BDCONNSTRING. DBUSER, DBPASS);
+      $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $sql = "UPDATE comments SET approved=0, checked=1 WHERE id=:id";
+      $sql = "UPDATE comments SET approved=1,checked=1 WHERE id=:id;";
       $statement = $pdo->prepare($sql);
       $statement->bindValue(":id", $id);
       $statement->execute();
@@ -48,6 +47,6 @@ if ($funct == 1) {
     }
   }
 } else {
-  echo ">:(";
+  echo "['not', 'working', 'yet', 000]";
 }
 ?>

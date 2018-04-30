@@ -15,20 +15,22 @@ $_SESSION['user'] = $_GET['user'];
     var z ={};
 
       $('document').ready(function () {
-        $('request').click(function () {
+        $('#request').click(function () {
           z.getQuote();
         });
-        $('sub').click(function () {
+        $('#submit').click(function () {
           z.submitMod();
-        })
+        });
       });
 
-
       z.getQuote = function () {
+
         var xmlhttp = new XMLHttpRequest();
        xmlhttp.onreadystatechange = function() {
            if (this.readyState == 4 && this.status == 200) {
-               var text = this.responseText;
+               var response = this.responseText;
+               var text = response.split('|')
+               console.log(text);
                $('#first').html(text[0]);
                $('#last').html(text[1]);
                $('#comment').html(text[2]);
@@ -40,18 +42,21 @@ $_SESSION['user'] = $_GET['user'];
       }
 
       z.submitMod = function () {
-        var checked = $("approve").attr("checked");
-        var id = $("#number");
+        alert('The function ran');
+        var checked = $("#approve").attr("checked");
+        var id = $("#number").html();
 
         var xmlhttp = new XMLHttpRequest();
        xmlhttp.onreadystatechange = function() {
            if (this.readyState == 4 && this.status == 200) {
              var text = this.responseText;
-             $('.response').html(text);
+             $('.response').html("Comment M O D E R A T E D");
            }
        };
-       xmlhttp.open("GET", "getfile.php?function=2&state=" + checked + "&id=" + id, true);
+       var getline = ("getfile.php?function=2&state=" + checked + "&id=" + id);
+       xmlhttp.open("GET", getline, true);
        xmlhttp.send();
+       z.getQuote();
       }
 
     </script>
@@ -70,9 +75,9 @@ $_SESSION['user'] = $_GET['user'];
 
         </div>
 
-        <input type="radio" name="approve">approve this content?<br>
-        <button type="button" name="request">Get Next Comment</button>
-        <button type="button" name="sub">Submit</button>
+        <input type="radio" name="approve" id="aprrove">approve this content?<br>
+        <button type="button" name="request" id="request">Get Next Comment</button>
+        <button type="button" name="sub" id="submit">Submit</button>
       </div>
       <div class="response">
 
