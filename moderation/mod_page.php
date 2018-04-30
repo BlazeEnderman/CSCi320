@@ -57,6 +57,7 @@ $_SESSION['user'] = $_GET['user'];
        xmlhttp.open("GET", getline, true);
        xmlhttp.send();
        z.getQuote();
+       // BUG: response from getfile.php are working
       }
 
     </script>
