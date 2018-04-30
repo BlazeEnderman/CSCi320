@@ -42,22 +42,23 @@ $_SESSION['user'] = $_GET['user'];
       }
 
       z.submitMod = function () {
-        alert('The function ran');
-        var checked = $("#approve").attr("checked");
+
+        var checked = $("#approve").prop("checked");
+        console.log(checked);
         var id = $("#number").html();
+        console.log(id);
 
         var xmlhttp = new XMLHttpRequest();
        xmlhttp.onreadystatechange = function() {
            if (this.readyState == 4 && this.status == 200) {
              var text = this.responseText;
-             $('.response').html("Comment M O D E R A T E D");
+             $('.response').html(text);
            }
        };
+
        var getline = ("getfile.php?function=2&state=" + checked + "&id=" + id);
        xmlhttp.open("GET", getline, true);
        xmlhttp.send();
-       z.getQuote();
-       // BUG: response from getfile.php are working
       }
 
     </script>
@@ -76,7 +77,7 @@ $_SESSION['user'] = $_GET['user'];
 
         </div>
 
-        <input type="radio" name="approve" id="aprrove">approve this content?<br>
+        <input type="checkbox" name="approve" id="approve">approve this content?<br>
         <button type="button" name="request" id="request">Get Next Comment</button>
         <button type="button" name="sub" id="submit">Submit</button>
       </div>

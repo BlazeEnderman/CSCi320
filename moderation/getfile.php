@@ -21,7 +21,7 @@ if ($funct == 1) {
 } else if ($funct == 2) {
   $approved = $_REQUEST['state'];
   $id = $_REQUEST['id'];
-  if ($approved == true) {
+  if ($approved == "true") {
     try {
       $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -29,18 +29,19 @@ if ($funct == 1) {
       $statement = $pdo->prepare($sql);
       $statement->bindValue(":id", $id);
       $statement->execute();
+      echo "Comment Approved";
     } catch (PDOException $e) {
       die($e->getMessage());
     }
-  } elseif ($approved == false) {
+  } else if ($approved == "false") {
     try {
       $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $sql = "UPDATE comments SET approved=1,checked=1 WHERE id=:id;";
+      $sql = "UPDATE comments SET approved=0,checked=1 WHERE id=:id";
       $statement = $pdo->prepare($sql);
       $statement->bindValue(":id", $id);
       $statement->execute();
-      echo "Comment M O D E R A T E D";
+      echo "Comment FAILED";
       $pdo = null;
     } catch (PDOException $e) {
       die($e->getMessage());
