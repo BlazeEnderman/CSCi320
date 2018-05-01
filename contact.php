@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="finalProject/stylez.css" />
   </head>
   <body>
-    <div id= "navBar">
+    <div id= "navBars">
+      <header>
+      <img src="PUBG_Header.png" alt="HeaderIMG">
       <ul>
       <li><a href="finalProject/finalDesign.php">Home</a></li>
       <li><a href="contact.php">Leave Comment</a></li>
@@ -14,6 +16,7 @@
       <li><a href="faq.php">FAQ</a></li>
       <li> <a href="comments.php">Comments</a> </li>
       </ul>
+    </header>
     </div>
 <br>
     <div class="container">
