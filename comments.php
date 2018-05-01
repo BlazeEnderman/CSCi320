@@ -38,18 +38,9 @@ function outputSingleComment($row)
   <body>
     <main>
       <a href="moderation\moderator_page_login.php">Moderator Login</a>
-      <div id= "navBar">
+      <div id= "navBars">
+        <header>
         <img src="PUBG_Header.png" alt="HeaderIMG">
-<<<<<<< HEAD
-        <ul>
-        <li><a href="finalProject/finalDesign.php">Home</a></li>
-        <li><a href="contact.php">Comment Form</a></li>
-        <li><a href="about.php">Game Spec</a></li>
-        <li><a href="faq.php">FAQ</a></li>
-        <li> <a href="comments.php">Comments</a> </li>
-        </ul>
-      </div>
-=======
         <p> <ul>
           <li> <a href="finalProject\finalDesign.php">Home</a> </li>
           <li> <a href="contact.php">Leave Comment</a> </li>
@@ -59,7 +50,7 @@ function outputSingleComment($row)
         </ul> </p>
       </header>
     </div>
->>>>>>> 921e6fb94f0c487d6550b9301ed533782a8c7e94
+
       <section>
         <h1>What people are saying about PUBG</h1>
         <br>
