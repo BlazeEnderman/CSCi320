@@ -7,6 +7,7 @@
   </head>
   <body>
     <div id= "navBar">
+      <img src="PUBG_Header.png" alt="HeaderIMG">
       <ul>
       <li><a href="finalProject/finalDesign.php">Home</a></li>
       <li><a href="contact.php">Comment Form</a></li>

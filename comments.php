@@ -38,18 +38,16 @@ function outputSingleComment($row)
   <body>
     <main>
       <a href="moderation\moderator_page_login.php">Moderator Login</a>
-      <div id="navBars">
-      <header>
+      <div id= "navBar">
         <img src="PUBG_Header.png" alt="HeaderIMG">
-        <p> <ul>
-          <li> <a href="finalProject\finalDesign.php">Home</a> </li>
-          <li> <a href="contact.php">Comment Form</a> </li>
-          <li> <a href="about.php">Game Spec</a> </li>
-          <li> <a href="faq.php">FAQ</a></li>
-          <li> <a href="comments.php">Comments</a> </li>
-        </ul> </p>
-      </header>
-    </div>
+        <ul>
+        <li><a href="finalProject/finalDesign.php">Home</a></li>
+        <li><a href="contact.php">Comment Form</a></li>
+        <li><a href="about.php">Game Spec</a></li>
+        <li><a href="faq.php">FAQ</a></li>
+        <li> <a href="comments.php">Comments</a> </li>
+        </ul>
+      </div>
       <section>
         <h1>What people are saying about PUBG</h1>
         <br>
