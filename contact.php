@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="finalProject/stylez.css" />
   </head>
   <body>
+<<<<<<< HEAD
     <div id= "navBar">
+=======
+    <div id= "navBars">
+      <header>
+>>>>>>> 38fbdee764eea3aeee18fb7e85edea94b2aa5c34
       <img src="PUBG_Header.png" alt="HeaderIMG">
       <ul>
       <li><a href="finalProject/finalDesign.php">Home</a></li>
@@ -15,6 +20,7 @@
       <li><a href="faq.php">FAQ</a></li>
       <li> <a href="comments.php">Comments</a> </li>
       </ul>
+    </header>
     </div>
 <br>
     <div class="container">
