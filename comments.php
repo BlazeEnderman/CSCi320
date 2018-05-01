@@ -37,7 +37,7 @@ function outputSingleComment($row)
   </head>
   <body>
     <main>
-      <a href="../moderator_page_login.php">Moderator Login</a>
+      <a href="moderation\moderator_page_login.php">Moderator Login</a>
       <header>
         <img src="PUBG_Header.png" alt="HeaderIMG" class = "headPic">
         <p> <ul>
