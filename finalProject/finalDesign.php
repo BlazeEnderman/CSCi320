@@ -10,7 +10,6 @@
   <img src="../PUBG_Header.png" alt="HeaderIMG" class = "headPic">
 </header>
 <body  background="background.jpg">
-<a href="moderator_page_login.php">Login/Create Account</a>
 <div id= "navBar" >
   <ul>
   <li><a href="finalDesign.php">Home</a></li>
