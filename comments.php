@@ -7,7 +7,7 @@ function outputComments()
   try {
       $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $sql = "SELECT * FROM comments";
+      $sql = "SELECT * FROM comments WHERE approved=1";
       $result = $pdo->query($sql);
       while ($row = $result->fetch()) {
         outputSingleComment($row);
@@ -43,7 +43,7 @@ function outputSingleComment($row)
         <img src="PUBG_Header.png" alt="HeaderIMG">
         <p> <ul>
           <li> <a href="finalProject\finalDesign.php">Home</a> </li>
-          <li> <a href="contact.php">Contact</a> </li>
+          <li> <a href="contact.php">Leave Comment</a> </li>
           <li> <a href="about.php">About Us</a> </li>
           <li> <a href="faq.php">FAQ</a></li>
           <li> <a href="comments.php">Comments</a> </li>
