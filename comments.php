@@ -7,7 +7,7 @@ function outputComments()
   try {
       $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $sql = "SELECT * FROM comments";
+      $sql = "SELECT * FROM comments WHERE approved=1";
       $result = $pdo->query($sql);
       while ($row = $result->fetch()) {
         outputSingleComment($row);
@@ -40,6 +40,7 @@ function outputSingleComment($row)
       <a href="moderation\moderator_page_login.php">Moderator Login</a>
       <div id= "navBar">
         <img src="PUBG_Header.png" alt="HeaderIMG">
+<<<<<<< HEAD
         <ul>
         <li><a href="finalProject/finalDesign.php">Home</a></li>
         <li><a href="contact.php">Comment Form</a></li>
@@ -48,6 +49,22 @@ function outputSingleComment($row)
         <li> <a href="comments.php">Comments</a> </li>
         </ul>
       </div>
+=======
+        <p> <ul>
+          <li> <a href="finalProject\finalDesign.php">Home</a> </li>
+<<<<<<< HEAD
+          <li> <a href="contact.php">Leave Comment</a> </li>
+          <li> <a href="about.php">About Us</a> </li>
+=======
+          <li> <a href="contact.php">Comment Form</a> </li>
+          <li> <a href="about.php">Game Spec</a> </li>
+>>>>>>> 13b9c6bb6417ff032f44870222d9ac324f2ba4a2
+          <li> <a href="faq.php">FAQ</a></li>
+          <li> <a href="comments.php">Comments</a> </li>
+        </ul> </p>
+      </header>
+    </div>
+>>>>>>> 921e6fb94f0c487d6550b9301ed533782a8c7e94
       <section>
         <h1>What people are saying about PUBG</h1>
         <br>

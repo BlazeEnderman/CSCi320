@@ -2,7 +2,7 @@
 //This page checks if the user inputed valid creds, those sick nasty street creds
 //yeah man fire raps hella go off
 //i hope im the only one looking at this
-require_once '../sqlthings/config.php';
+require_once 'mod_config.php';
 
 
 function checkLogin()

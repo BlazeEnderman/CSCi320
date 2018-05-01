@@ -26,7 +26,7 @@ li {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    width: 118px;
+    width: 130px;
 }
 
 #navBars li a {
@@ -35,7 +35,7 @@ li {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    width: 118px;
+    width: 130px;
 }
 
 #navBar li a:hover:not(.active) {
@@ -52,7 +52,7 @@ li {
 
 #navBar {
   text-align: center;
-  width:750px;
+  width:810px;
   margin: auto;
   display: block;
   align-content: center;
@@ -79,7 +79,7 @@ li {
 }
 
 body {
-  background-color: lightgrey;
+  background-color: beige;
 }
 
 #navBar header {
@@ -105,9 +105,36 @@ textarea {
 .generalInfo  {
   
   color: white;
+<<<<<<< HEAD
+  padding: 0;
+}
+#specs {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid grey;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#specs li{
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  overflow: hidden;
+  background-color: #333;
+  list-style-type: circle;
+}
+.generalInfo {
+  background-color: #333;
+}
+#specSpan #specs{
+  background-color: #333;
+  color: white;
+  border: none;
+=======
   font-size: 22px;
 }
 
 #specs{
   font-size: 20px;
+>>>>>>> 13b9c6bb6417ff032f44870222d9ac324f2ba4a2
 }

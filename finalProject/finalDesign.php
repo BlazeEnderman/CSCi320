@@ -13,8 +13,13 @@
 <div id= "navBar">
   <ul>
   <li><a href="finalDesign.php">Home</a></li>
+<<<<<<< HEAD
+  <li><a href="../contact.php">Leave Comment</a></li>
+  <li><a href="../about.php">About</a></li>
+=======
   <li><a href="../contact.php">Comment form</a></li>
   <li><a href="../about.php">Game Spec</a></li>
+>>>>>>> 13b9c6bb6417ff032f44870222d9ac324f2ba4a2
   <li><a href="../faq.php">FAQ</a></li>
   <li> <a href="../comments.php">Comments</a> </li>
   </ul>
@@ -24,7 +29,7 @@
 </div>
 </div>
 <section class="generalInfo">
-  <h1 id="meat">The Meat</h1>
+  <h1 id="meat">Summary</h1>
   <p id="meat">
     Playerunknown's Battlegrounds is a battle royale, where players try to claim
     victory by killing each other with things like guns and grenades and stuff.
@@ -33,6 +38,18 @@
     would it be to have a weapon like that? Join the PUBG community now and experience
     all of these awesome features.
   </p>
-
+<h2 id="meat">System Requirements</h2>
+<span id="specSpan">
+  <ul id="specs">
+  <li>OS: 64-bit Windows 7, Windows 8.1, Windows 10</li>
+  <li>Processor: Intel Core i3-4340 / AMD FX-6300</li>
+  <li>Memory: 6 GB RAM</li>
+  <li>Graphics: Nvidia GeForce GTX 660 2GB / AMD Radeon HD 7850 2GB</li>
+  <li>DirectX: Version 11</li>
+  <li>Network: Broadband Internet connection</li>
+  <li>Storage: 30 GB available space</li>
+  </ul>
+</span>
+</section>
 </body>
 <html>
