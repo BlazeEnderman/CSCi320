@@ -102,7 +102,12 @@ textarea {
    padding-top: 15px;
 }
 
-#meat {
+.generalInfo  {
   background-color: #333;
   color: white;
+  font-size: 22px;
+}
+
+#specs{
+  font-size: 20px;
 }

@@ -9,8 +9,8 @@
     <div id= "navBar">
       <ul>
       <li><a href="finalProject/finalDesign.php">Home</a></li>
-      <li><a href="contact.php">Contact</a></li>
-      <li><a href="about.php">About</a></li>
+      <li><a href="contact.php">Comment Form</a></li>
+      <li><a href="about.php">Game Spec</a></li>
       <li><a href="faq.php">FAQ</a></li>
       <li> <a href="comments.php">Comments</a> </li>
       </ul>
