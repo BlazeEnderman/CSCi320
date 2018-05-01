@@ -23,8 +23,8 @@
           <li> <a href="finalProject\finalDesign.php">Home</a> </li>
           <li> <a href="contact.php">Leave Comment</a> </li>
           <li> <a href="about.php">About Us</a> </li>
-          <li> <a href="contact.php">Comment Form</a> </li>
           <li> <a href="faq.php">FAQ</a></li>
+          <li> <a href="comments.php">Comments</a> </li>
 
         </ul> </p>
       </header>
