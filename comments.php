@@ -7,9 +7,8 @@ function outputComments()
   try {
       $pdo = new PDO(DBCONNSTRING, DBUSER, DBPASS);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $sql = "SELECT * FROM comments WHERE approved=1";
+      $sql = "SELECT * FROM comments";
       $result = $pdo->query($sql);
-
       while ($row = $result->fetch()) {
         outputSingleComment($row);
       }
@@ -33,15 +32,12 @@ function outputSingleComment($row)
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
-    <title></title>
     <link rel="stylesheet" href="finalProject/stylez.css" />
     <title>Comments</title>
-
   </head>
   <body>
     <main>
-      <div id="navBars">
+      <a href="moderator_page_login.php">Moderator Login</a>
       <header>
         <img src="PUBG_Header.png" alt="HeaderIMG" class = "headPic">
         <p> <ul>
@@ -52,7 +48,6 @@ function outputSingleComment($row)
           <li> <a href="comments.php">Comments</a> </li>
         </ul> </p>
       </header>
-    </div>
       <section>
         <h1>What people are saying about PUBG</h1>
         <br>
