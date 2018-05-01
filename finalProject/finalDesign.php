@@ -10,11 +10,16 @@
   <img src="../PUBG_Header.png" alt="HeaderIMG" class = "headPic">
 </header>
 <body  background="background.jpg">
-<div id= "navBar" >
+<div id= "navBar">
   <ul>
   <li><a href="finalDesign.php">Home</a></li>
+<<<<<<< HEAD
   <li><a href="../contact.php">Leave Comment</a></li>
   <li><a href="../about.php">About</a></li>
+=======
+  <li><a href="../contact.php">Comment form</a></li>
+  <li><a href="../about.php">Game Spec</a></li>
+>>>>>>> 13b9c6bb6417ff032f44870222d9ac324f2ba4a2
   <li><a href="../faq.php">FAQ</a></li>
   <li> <a href="../comments.php">Comments</a> </li>
   </ul>
@@ -22,7 +27,7 @@
 <div class="video" >
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qJfNdN2_rGg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
-
+</div>
 <section class="generalInfo">
   <h1 id="meat">Summary</h1>
   <p id="meat">

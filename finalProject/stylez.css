@@ -102,9 +102,10 @@ textarea {
    padding-top: 15px;
 }
 
-#meat {
+.generalInfo  {
   background-color: #333;
   color: white;
+<<<<<<< HEAD
   padding: 0;
 }
 #specs {
@@ -129,4 +130,11 @@ textarea {
   background-color: #333;
   color: white;
   border: none;
+=======
+  font-size: 22px;
+}
+
+#specs{
+  font-size: 20px;
+>>>>>>> 13b9c6bb6417ff032f44870222d9ac324f2ba4a2
 }
