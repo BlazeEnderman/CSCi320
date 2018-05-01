@@ -43,13 +43,8 @@ function outputSingleComment($row)
         <img src="PUBG_Header.png" alt="HeaderIMG">
         <p> <ul>
           <li> <a href="finalProject\finalDesign.php">Home</a> </li>
-<<<<<<< HEAD
           <li> <a href="contact.php">Leave Comment</a> </li>
           <li> <a href="about.php">About Us</a> </li>
-=======
-          <li> <a href="contact.php">Comment Form</a> </li>
-          <li> <a href="about.php">Game Spec</a> </li>
->>>>>>> 13b9c6bb6417ff032f44870222d9ac324f2ba4a2
           <li> <a href="faq.php">FAQ</a></li>
           <li> <a href="comments.php">Comments</a> </li>
         </ul> </p>
